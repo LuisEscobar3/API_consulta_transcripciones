@@ -7,8 +7,9 @@
 
 # AHORA
 import psycopg2
-import app.functions.crud
+
 from app.config.database import get_db_connection
+from app.functions import crud
 from app.models import schemas
 from dotenv import load_dotenv
 from fastapi import FastAPI, Depends, HTTPException
