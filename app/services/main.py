@@ -4,7 +4,7 @@
 
 # --- ESTA ES LA LÍNEA QUE DEBES AÑADIR ---
 # Asegúrate de que se ejecute antes de crear la app de FastAPI
-load_dotenv(encoding='utf-8')
+
 # AHORA
 import psycopg2
 import app.functions.crud
@@ -13,7 +13,7 @@ from app.models import schemas
 from dotenv import load_dotenv
 from fastapi import FastAPI, Depends, HTTPException
 from typing import List, Optional
-
+load_dotenv(encoding='utf-8')
 app = FastAPI(
     title="API de Transcripciones (Modular)",
     description="Una API modular para consultar transcripciones.",
